@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Regulament și Declarații • Gugulan MTB</title>
+<meta name="description" content="Regulamentul complet al competiției Gugulan MTB 2026 și declarațiile necesare pentru participare (proprie răspundere și minori)."/>
+<meta name="author" content="Gugulan MTB"/>
+<meta name="twitter:site" content="@gugulanmtb"/>
+<meta property="og:title" content="Regulament și Declarații • Gugulan MTB"/>
+<meta property="og:description" content="Regulamentul complet al competiției Gugulan MTB 2026 și declarațiile necesare pentru participare (proprie răspundere și minori)."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="canonical" href="/regulament-declaratii"/>
+<meta name="robots" content="index, follow"/>
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta name="theme-color" content="#ffffff">
+<style>
+.declaratii-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2.5rem auto 0;
+}
+.declaratii-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: color-mix(in oklch, var(--dirt) 95%, transparent);
+  border: 1px solid color-mix(in oklch, var(--peak) 15%, transparent);
+  border-radius: 8px;
+  color: var(--peak);
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+.declaratii-btn i:first-child { font-size: 1.5rem; color: var(--brand); flex-shrink: 0; }
+.declaratii-btn i:last-child { margin-left: auto; opacity: 0.5; font-size: 0.85rem; }
+.declaratii-btn:hover {
+  transform: translateY(-4px);
+  border-color: var(--lime);
+  background: color-mix(in oklch, var(--lime) 8%, var(--dirt));
+}
+.regulament-download {
+  text-align: center;
+  margin: 3rem auto 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="main-nav" class="navbar">
+  <div class="navbar-inner">
+    <a href="https://gugulanmtb.ro/" class="navbar-logo">
+      <img id="nav-logo" src="assets/logo.webp" alt="Gugulan MTB Race Caransebeș" width="120" height="110"/>
+      <span>Gugulan MTB</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="nav-links-desktop">
+      <div class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false">MTB <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="/program">Program</a>
+          <a href="/categorii-premii">Categorii și Premii</a>
+          <a href="/traseu">Traseu MTB</a>
+          <a href="/modalitati-inscriere">Modalități și taxe de înscriere</a>
+          <a href="https://racetime.ro/events/188/participants" target="_blank">Participanții Înscriși</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false">Kids <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="/program-kids">Program</a>
+          <a href="#">Categorii și Premii</a>
+          <a href="#">Traseu KIDS</a>
+        </div>
+      </div>
+      <a href="https://liniadesosire.ro/rezultate/gugulan-mtb-run-2025/" class="nav-link">Rezultate Anterioare</a>
+      <a href="https://gugulanmtb.ro/#sponsori" class="nav-link">Sponsori</a>
+      <a href="https://racetime.ro/events/188/register" class="btn-cta">Înscrie-te</a>
+    </div>
+
+    <!-- Mobile buttons -->
+    <div class="nav-mobile">
+      <a href="https://racetime.ro/events/188/register" class="btn-cta" style="padding:0.5rem 1rem;font-size:11px;">Înscrie-te</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('span:last-child').textContent=this.nextElementSibling.classList.contains('open')?'−':'+'">
+        MTB <span>+</span>
+      </button>
+      <div class="mobile-dropdown-items">
+        <a href="/program">Program</a>
+        <a href="/categorii-premii">Categorii și Premii</a>
+        <a href="/traseu">Traseu MTB</a>
+        <a href="/modalitati-inscriere">Modalități și taxe</a>
+        <a href="https://racetime.ro/events/188/participants" target="_blank">Participanții Înscriși</a>
+      </div>
+    </div>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('span:last-child').textContent=this.nextElementSibling.classList.contains('open')?'−':'+'">
+        Kids <span>+</span>
+      </button>
+      <div class="mobile-dropdown-items">
+        <a href="/program-kids">Program</a>
+        <a href="#">Categorii și Premii</a>
+        <a href="#">Traseu KIDS</a>
+      </div>
+    </div>
+    <a href="https://liniadesosire.ro/rezultate/gugulan-mtb-run-2025/" class="mobile-link">Rezultate Anterioare</a>
+    <a href="https://gugulanmtb.ro/#sponsori" class="mobile-link" style="border-bottom:none;">Sponsori</a>
+    <a href="https://racetime.ro/events/188/register" class="btn-cta" style="display:block;text-align:center;padding:1rem;margin-top:1.5rem;font-size:1.125rem;">Înscrie-te</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="traseu-hero">
+  <div class="traseu-hero-bg"></div>
+  <div class="traseu-hero-content">
+    <div class="traseu-meta">EDIȚIA A VII-A • 12 SEPTEMBRIE 2026</div>
+    <h1 class="traseu-title">Regulament și Declarații</h1>
+    <p class="traseu-desc">Te rugăm să citești cu atenție regulamentul și să îți pregătești declarațiile necesare pentru participare. (<a href="#declaratii">vezi declarații</a>)</p>
+    <div class="traseu-hero-buttons">
+      <a href="#declaratii" class="hero-btn-primary">Vezi Declarațiile</a>
+      <a href="/" class="hero-btn-secondary">Înapoi Acasă</a>
+    </div>
+  </div>
+</section>
+
+<!-- Regulament -->
+<section class="section section-dark">
+  <div class="premii-container">
+    <h2 class="premii-section-title" style="text-align:center;border-bottom:none;margin-bottom:0.75rem;">Regulament Gugulan MTB — Ediția a VII-a</h2>
+    <p class="text-body opacity-80" style="max-width:700px;margin:0 auto 2.5rem;text-align:center;">Te rugăm să citești cu atenție regulamentul de mai jos și să îți pregătești declarațiile necesare pentru participare. (<a href="#declaratii" style="color:var(--brand);font-weight:600;text-decoration:none;border-bottom:2px solid var(--brand);">vezi declarații</a>)</p>
+
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">01</span>
+          <span class="accordion-title">Cadru general</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>1.1. Acest regulament se aplică participanților la concursul pentru juniori și adulți „Gugulan MTB 2026 Caransebeș”.</p>
+          <p>1.2. Organizator al evenimentului este Asociația Gugulanii Sportivi din Caransebeș, denumită în continuare „organizator”.</p>
+          <p>1.3. „Gugulan MTB 2026 Caransebeș” este o competiție de tip mountain-bike XCM. Concursul este deschis publicului larg și se adresează în principal bicicliștilor amatori (începători, intermediari și avansați) care împlinesc vârsta de 12 ani în anul concursului, precum și sportivilor legitimați la cluburi sportive și celor care dețin o licență FRC, amatori sau profesioniști.</p>
+          <p>Pe traseul scurt (MTB 19 km) pot participa concurenți de sex masculin și feminin care au împlinit 12 ani în anul concursului, iar pe traseul lung (MTB 30 km sau MTB 52 km) pot participa concurenți care au împlinit 18 ani la data concursului.</p>
+          <p>Copiii cu vârsta cuprinsă între 3 și 12 ani vor avea un traseu amenajat în Cartierul Valea Cenchii din Caransebeș.</p>
+          <p>1.4. Sunt admise biciclete de tip „mountain bike” cu propulsare umană, în stare bună de funcționare, cu roți de 26”, 27.5” sau 29”.</p>
+          <p>1.5. Înscrierea participanților se face online sau la fața locului, în intervalul orar anunțat.</p>
+          <p>1.6. Prin bifarea căsuței corespunzătoare în timpul înregistrării online sau prin semnarea formularului de înscriere la fața locului, fiecare participant declară că acceptă și înțelege termenii și condițiile de participare, precum și regulamentul competiției, și își dă acordul ca imaginea sa sau alte date publice (rezultate, clasamente, fotografii etc.) să fie folosite în materialele de promovare a evenimentului, gratuit și necenzurat.</p>
+          <p>1.7. Organizatorul își rezervă dreptul de a refuza înregistrarea și participarea la cursă a concurenților, din motive obiective.</p>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">02</span>
+          <span class="accordion-title">Obligațiile participanților</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <ul>
+            <li>2.1. Participarea se face pe proprie răspundere, în deplină cunoștință a aptitudinii de a participa, a stării de sănătate fizică și mentală, precum și a stării tehnice a echipamentului.</li>
+            <li>2.2. Fiecare participant este responsabil pentru propria securitate și siguranță. Organizatorii, partenerii, sponsorii, voluntarii și personalul evenimentului nu sunt responsabili pentru nicio rănire, deces sau pagubă survenită în timpul sau ca urmare a desfășurării evenimentului.</li>
+            <li>2.3. Fiecare participant trebuie să semneze, la preluarea numărului de concurs, o declarație pe propria răspundere prin care își asumă riscurile participării. Este recomandat să dețină o asigurare valabilă pentru competiții sportive.</li>
+            <li>2.4. Purtarea căștii de protecție este obligatorie pe toată durata concursului și a antrenamentelor. Refuzul purtării căștii atrage descalificarea.</li>
+            <li>2.5. Participanții trebuie să respecte indicațiile/instrucțiunile organizatorului și ale personalului de concurs.</li>
+            <li>2.6. Preluarea numărului de concurs și a pachetului de înscriere se face la fața locului sau în locațiile anunțate, în intervalul orar stabilit. Pachetul de înscriere nu poate fi expediat prin poștă în avans.</li>
+            <li>2.7. Organizatorul poate interzice startul sau continuarea cursei oricărui participant aflat în stare de ebrietate, sub influența substanțelor halucinogene/dopante sau într-o stare evidentă de slăbiciune, boală ori epuizare fizică/psihică.</li>
+            <li>2.8. Sportivii juniori (12–18 ani) pot participa doar însoțiți de părinte/tutore legal sau de un reprezentant al clubului la care sunt legitimați. Părintele/tutorele sau antrenorul trebuie să semneze o declarație pe propria răspundere pentru minori.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">03</span>
+          <span class="accordion-title">Contribuția de participare</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>Copiii sub 18 ani și femeile de toate vârstele nu plătesc contribuție de participare.</p>
+          <ul>
+            <li>3.1. Contribuția de participare se poate achita prin transfer bancar sau numerar, la fața locului.</li>
+            <li>3.2. Plata prin transfer bancar se poate efectua până în data de 10.09.2026 (ora 23:00).</li>
+            <li>3.3. Înregistrările online se deschid la data și ora anunțate pe site și se încheie pe 11.09.2026 (ora 23:59).</li>
+            <li>3.4. Contribuția de participare (de la 18 ani în sus, masculin), pentru MTB 19 km, 30 km și 52 km: <strong>100 lei</strong> pentru înscrierea online cu plată confirmată până pe 11.09.2026 ora 23:59 (card) / 10.09.2026 ora 23:00 (transfer bancar), respectiv <strong>130 lei</strong> pentru înscrierea și plata numerar la fața locului, pe 12.09.2026, în intervalul 09:00–10:30.</li>
+            <li>3.6. În caz de neprezentare la start, abandon sau retragere din orice motiv, taxa de participare nu se returnează, nu este transmisibilă și nu este valabilă pentru un concurs ulterior.</li>
+            <li>3.7. În cazul anulării competiției din motive de forță majoră sau independente de organizator, taxa de participare nu se returnează, iar organizatorul nu suportă costurile adiacente ale participanților (transport, cazare, masă etc.).</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">04</span>
+          <span class="accordion-title">Pachetul de înscriere</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>4.1. Pachetul de înscriere include:</p>
+          <ul>
+            <li>alimente și băuturi în zona de start/finish și pe traseu;</li>
+            <li>tichet de masă;</li>
+            <li>număr de concurs (cu chip de cronometrare electronică) și bride de fixare;</li>
+            <li>pentru primii 100 de concurenți cu contribuția confirmată până pe 11.09.2026: tricou cu logo Gugulan MTB;</li>
+            <li>produse oferite de sponsori și parteneri.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">05</span>
+          <span class="accordion-title">Trasee</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>5.1. Concursul se desfășoară pe 3 trasee diferite — scurt (~19 km), mediu (~30 km) și lung (~52 km) — pentru a acoperi nivelurile de pregătire ale participanților amatori și profesioniști. Traseele vor fi definitivate și anunțate cu cel puțin 2 săptămâni înainte de concurs.</p>
+          <ul>
+            <li>Traseu 19 km — accesibil sportivilor de nivel intermediar și începătorilor cu o condiție fizică bună; diferență de nivel pozitivă de cca. 267 m; dificultate ușoară.</li>
+            <li>Traseu 30 km — accesibil sportivilor avansați; diferență de nivel pozitivă de cca. 797 m; dificultate medie.</li>
+            <li>Traseu 52 km — accesibil sportivilor avansați; diferență de nivel pozitivă de cca. 1.672 m; dificultate sporită.</li>
+          </ul>
+          <p>5.4. Organizatorii nu își asumă răspunderea pentru obiectele pierdute sau uitate pe traseu; vă rugăm să predați orice obiect găsit organizatorilor, pentru a fi restituit posesorului.</p>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">06</span>
+          <span class="accordion-title">Categorii și clasament</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>6.1. Participanții se pot înregistra în următoarele categorii de vârstă (anul nașterii), în funcție de traseul ales:</p>
+          <ul>
+            <li>Masculin 13-18 ani (2013-2008) — MTB 19 km</li>
+            <li>Feminin 13-18 (2013-2008) — MTB 19 km</li>
+            <li>Masculin 19-39 (2007-1987) — toate traseele &amp; eBike 30 km</li>
+            <li>Masculin 40+ (1986+) — toate traseele &amp; eBike 30 km</li>
+            <li>Masculin 50+ (1976+) — toate traseele &amp; eBike 30 km</li>
+            <li>Feminin 19+ (2007+) — toate traseele &amp; eBike 30 km</li>
+          </ul>
+          <p>6.2. Încadrarea în categoria de vârstă se face exclusiv în funcție de anul nașterii, indiferent de lună și zi (diferența dintre anul curent și anul nașterii concurentului).</p>
+          <p>6.3. Se fac clasamente pentru categoriile de mai sus, precum și un clasament general.</p>
+          <p>6.4. Se premiază (medalie) primii 3 clasați la fiecare categorie. Premiile în bani se acordă în funcție de categorie și traseu — vezi distribuția completă pe pagina <a href="/categorii-premii">Categorii și Premii</a>.</p>
+          <p>6.5. Premiile în produse, medalii și bani se decernează la festivitatea organizată după concurs și nu se expediază prin poștă. Premiile în bani se încasează numerar, exclusiv de către câștigător, în baza actului de identitate (copie CI/certificat de naștere).</p>
+          <p>6.6. Numărul minim de participanți la o categorie este de 7. Dacă nu se întrunește acest număr, categoria se comasează cu cea mai apropiată categorie validă; dacă nicio categorie nu întrunește numărul minim, toate categoriile devin OPEN (comasate).</p>
+          <p>6.7. Concurenții pot schimba traseul de concurs cât timp înscrierile online sunt deschise, printr-o solicitare scrisă la <a href="mailto:gugulanbike@gmail.com">gugulanbike@gmail.com</a>. După 11.09.2026 (ora 23:00) nu mai este posibil.</p>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">07</span>
+          <span class="accordion-title">Proceduri de concurs</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>7.1. Ședința tehnică — se ține în ziua concursului, pentru toți participanții, la linia de start, condusă de directorul de concurs. Se recomandă prezența tuturor participanților.</p>
+          <p>7.2. Cronometrarea — se face la secundă, cu un sistem electronic pe bază de chip-uri. Fiecare participant poartă un chip personalizat, netransmisibil; este responsabilitatea participantului să monteze corect numărul de concurs (care conține chipul).</p>
+          <p>7.3. Timp limită de parcurgere: MTB 19 km — 3:00 ore; MTB 30 km — 5:00 ore; MTB 52 km — 6:00 ore, de la start. După acest timp, concurentul care nu trece linia de sosire este considerat descalificat.</p>
+          <p>7.4. Timp limită intermediar pentru MTB 30 km (după a doua buclă, la intrarea în bucla 3, în Valea Cenchii): 3:30 ore de la start. După acest timp, concurentul care nu ajunge la punctul intermediar este descalificat; poate continua traseul pe proprie răspundere, fără chip, deși se recomandă întoarcerea în zona Start/Sosire. Pentru celelalte trasee nu există timpi intermediari.</p>
+          <p>7.5. Numărul de concurs se ridică pe baza actului de identitate, se montează pe ghidon (bicicliști) sau pe piept (alergători) și trebuie să fie vizibil pe tot parcursul concursului, nemodificat. În caz de abandon, se predă reprezentanților organizatorului.</p>
+          <p>7.6. Startul se dă la ora stabilită și anunțată pe site. Rămâne deschis 15 minute după ora oficială; cei porniți în acest interval sunt cronometrați conform orei oficiale de start. Cei care pornesc după acest interval nu vor fi clasați.</p>
+          <p>7.7. Retragerea din concurs/abandonul se declară doar la punctele de control sau în zona Start/Sosire, păstrând numărul de concurs (fără chip). Neanunțarea retragerii poate declanșa o operațiune de căutare-salvare pe cheltuiala participantului. Fiecare participant este responsabil pentru propriul transport și traseu de revenire după retragere.</p>
+          <p>7.8. Organizatorul poate opri un participant care s-a accidentat, nu s-a încadrat în timpii-limită anunțați sau în cazuri excepționale.</p>
+          <p>7.9. Pe traseu sunt amplasate puncte de control obligatorii; participanții care nu trec printr-un punct de control, indiferent de motiv, vor fi descalificați.</p>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">08</span>
+          <span class="accordion-title">Protecția mediului înconjurător</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>8.1. Este strict interzisă aruncarea deșeurilor de orice fel (bidoane, flacoane, tuburi de gel, ambalaje) în orice loc de pe traseu, în afara punctelor amenajate sau a punctelor de control. Nerespectarea acestei reguli atrage descalificarea.</p>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">09</span>
+          <span class="accordion-title">Echipament obligatoriu</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <ul>
+            <li>9.1. Echipamentul obligatoriu constă în cască de protecție și numărul de concurs care conține chipul de cronometrare.</li>
+            <li>9.2. Bicicleta trebuie verificată de concurent înaintea concursului și trebuie să fie în stare bună de funcționare.</li>
+            <li>9.3. Se recomandă utilizarea recipientelor pentru lichide între punctele de alimentare.</li>
+            <li>9.4. Alte recomandări: ochelari, pompă, cameră de rezervă, petice pentru pană și leviere, trusă de scule, telefon mobil protejat de umezeală, echipament de ciclism adecvat vremii.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">10</span>
+          <span class="accordion-title">Obligațiile participanților</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <ul>
+            <li>să cunoască regulamentul competiției;</li>
+            <li>să înțeleagă că echipajul de prim ajutor rămâne în zona de start/sosire;</li>
+            <li>să înțeleagă că organizatorii sunt exonerați de răspundere dacă persoane neidentificate sau publicul deteriorează marcajele;</li>
+            <li>să participe la ședința tehnică și să rețină informațiile transmise de organizatori;</li>
+            <li>să respecte în totalitate traseul și să treacă prin fiecare punct de control (sunt interzise scurtăturile);</li>
+            <li>în caz de ieșire din traseu (din orice motiv), reintrarea trebuie făcută prin același punct pe unde s-a ieșit;</li>
+            <li>să treacă prin toate punctele de control stabilite;</li>
+            <li>să respecte regulile de circulație — traseul nu este închis altor participanți la trafic (autovehicule, pietoni, turiști, animale etc.);</li>
+            <li>să permită oricărui concurent mai rapid să îl depășească fără obstrucții;</li>
+            <li>să anunțe imediat abandonul la primul arbitru de traseu, punct de control, punct de alimentare, la Start-Sosire sau la telefonul organizatorilor;</li>
+            <li>să își transporte singur echipamentul înapoi în zona de start/sosire, în caz de abandon;</li>
+            <li>să dea dovadă de fair-play față de ceilalți concurenți;</li>
+            <li>sunt interzise: bicicletele electrice sau cu motor, motocicletele, tractarea de către un alt vehicul, ajutoarele din afara concursului;</li>
+            <li>să anunțe la primul arbitru de traseu/post de control orice problemă sesizată pe traseu;</li>
+            <li>să poarte întreaga responsabilitate civilă și penală pentru orice daună provocată altor persoane în timpul cursei;</li>
+            <li>prin înscriere, renunță la orice drept de a solicita despăgubiri sau de a acționa în instanță organizatorii, arbitrii, voluntarii, sponsorii, partenerii sau instituțiile publice care susțin competiția, în caz de accident sau pagubă;</li>
+            <li>este interzisă aruncarea ambalajelor, deșeurilor sau a altor obiecte pe traseu;</li>
+            <li>este interzisă distrugerea deliberată a mediului înconjurător;</li>
+            <li>respectarea naturii și a persoanelor întâlnite pe traseu;</li>
+            <li>cheltuielile de deplasare, cazare, masă, înscriere etc. cad integral în responsabilitatea concurenților.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">11</span>
+          <span class="accordion-title">Condiții de descalificare</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <ul>
+            <li>nerespectarea regulamentului competiției;</li>
+            <li>neparcurgerea traseului în întregime sau scurtarea lui;</li>
+            <li>abaterile nejustificate de la traseu;</li>
+            <li>circulația în sens invers pe traseu;</li>
+            <li>utilizarea anvelopelor cu crampoane metalice;</li>
+            <li>nerespectarea indicațiilor agenților de traseu;</li>
+            <li>nefolosirea căștii de protecție pe timpul concursului;</li>
+            <li>comportamentul lipsit de fair-play;</li>
+            <li>folosirea ajutoarelor din afara concursului;</li>
+            <li>schimbarea bicicletei în timpul concursului;</li>
+            <li>modificarea numărului de concurs sau a chipului de cronometraj;</li>
+            <li>aruncarea ambalajelor sau a altor deșeuri pe traseu și nerespectarea mediului înconjurător.</li>
+          </ul>
+          <p>Descalificările se pot face și după concurs, în urma vizualizării fotografiilor/filmărilor sau a unei sesizări fondate din partea altor concurenți. Taxa de participare nu se rambursează în caz de descalificare. Orice accident survenit în timpul desfășurării va fi în responsabilitatea celor implicați.</p>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">12</span>
+          <span class="accordion-title">Drepturi ale organizatorilor</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <ul>
+            <li>organizatorii își rezervă dreptul de a comasa categorii dacă la una nu se prezintă cel puțin 7 concurenți;</li>
+            <li>organizatorul își rezervă dreptul de a opri un participant accidentat, care nu s-a încadrat în timpii-limită sau în alte cazuri excepționale;</li>
+            <li>organizatorii își rezervă dreptul de a folosi imaginea și numele concurenților în materiale de promovare;</li>
+            <li>în caz de forță majoră, organizatorii pot anula sau amâna competiția, fără returnarea taxei și fără a suporta costurile adiacente ale participanților;</li>
+            <li>taxa de participare nu se returnează în caz de neprezentare, abandon sau retragere; organizatorul nu suportă costul reparării/schimbării bicicletei sau echipamentelor participanților;</li>
+            <li>organizatorii își rezervă dreptul de a modifica regulamentul; modificările vor fi publicate pe site, iar cele de ultim moment vor fi afișate la zona de Start-Sosire;</li>
+            <li>necunoașterea regulamentului nu constituie scuză pentru nicio abatere, penalizare, descalificare sau eventuală accidentare/pagubă.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">13</span>
+          <span class="accordion-title">Reclamații / Contestații</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>13.1. Orice participant poate depune o reclamație/contestație împotriva altui participant care nu a respectat regulile competiției, sau împotriva deciziilor oficialilor.</p>
+          <p>13.2. Reclamațiile și contestațiile se depun în scris comitetului de concurs, în decurs de 15 minute de la finish-ul oficial.</p>
+          <p>13.3. Contestația se depune în scris, la 15 minute de la afișarea rezultatelor provizorii complete, împreună cu o taxă de 50 lei. Rezolvarea se face în următoarele 30 de minute; taxa se returnează dacă este acceptată contestația.</p>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">14</span>
+          <span class="accordion-title">Caracteristici ale competiției</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <p>14.1. Evenimentul este o competiție outdoor. Traseul este neamenajat și neprotejat, în cea mai mare parte prin pădure, folosește drumuri publice (circulația rutieră nu este oprită), poteci marcate și nemarcate. Anumite porțiuni dificile vor fi semnalizate de organizatori și trebuie parcurse cu grijă. Traseul nu este închis altor participanți la trafic (autovehicule, pietoni, turiști, animale etc.), iar participanții au obligația de a respecta regulile de conduită în trafic impuse de lege. Competiția se desfășoară pe munte, într-un spațiu neamenajat și neprotejat, existând riscuri obișnuite competițiilor outdoor (coliziuni, căderi, alunecări, insolație, deshidratare, arsuri, rău de altitudine, furtuni, animale, efort fizic etc.).</p>
+          <p>14.2. Parcurgerea traseului necesită experiență și cunoștințe minime:</p>
+          <ul>
+            <li>experiență generală privind concursurile de biciclete și o condiție fizică adecvată;</li>
+            <li>cunoștințe tehnice pentru abordarea unui traseu neamenajat, prin pădure;</li>
+            <li>capacitatea de a urca și coborî în siguranță pante înclinate, în condiții dificile;</li>
+            <li>fair-play și o atitudine adecvată situațiilor dificile;</li>
+            <li>conștientizarea faptului că nu toate riscurile competiției pot fi acoperite de măsurile de siguranță ale organizatorilor;</li>
+            <li>niciun premiu nu este mai presus de sănătatea și viața proprie sau a altor participanți.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-num">15</span>
+          <span class="accordion-title">Modificarea traseului, alte decizii</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><div class="accordion-body">
+          <ul>
+            <li>15.1. Organizatorul poate modifica oricând traseul sau poate anula/opri competiția, dacă aceasta nu se poate desfășura în condiții de siguranță.</li>
+            <li>15.2. Suporterii pot susține orice competitor, cu condiția să respecte regulile de conduită și indicațiile oficialilor, fără a împiedica desfășurarea competiției.</li>
+            <li>15.3. Pe traseu nu este permis niciun ajutor din exterior, cu excepția punctelor de realimentare amenajate.</li>
+            <li>15.4. Toate deciziile sunt luate de comitetul de concurs sau de directorul de concurs.</li>
+            <li>15.5. În caz de forță majoră, organizatorii pot decide modificări de traseu sau program, inclusiv amânarea sau anularea cursei, în situații excepționale.</li>
+            <li>15.6. Organizatorul își rezervă dreptul de a aduce modificări informațiilor de pe site, regulamentului sau programului; acestea vor fi comunicate cu minimum 3 zile înainte de concurs sau cel târziu la preluarea numerelor de concurs.</li>
+          </ul>
+          <p>15.7. Asociația „Gugulanii Sportivi” organizează, pe 12 septembrie 2026, evenimentul sportiv Gugulan MTB Caransebeș. Este o asociație non-profit, fără scop comercial și fără angajați — competiția este posibilă datorită contribuțiilor de participare, sponsorilor/partenerilor și dedicației voluntarilor.</p>
+        </div></div></div>
+      </div>
+
+    </div>
+
+    <div class="regulament-download">
+      <a href="https://gugulanmtb.ro/assets/Regulament-concurs-MTB-2026.doc" target="_blank" rel="noopener" class="hero-btn-primary" style="display:inline-block;">Descarcă Regulamentul</a>
+    </div>
+  </div>
+</section>
+
+<!-- Declaratii -->
+<section id="declaratii" class="section section-dark" style="padding-top:0;">
+  <div class="premii-container">
+    <h2 class="premii-section-title" style="text-align:center;border-bottom:none;margin-bottom:0.75rem;">Declarații Gugulan MTB — Ediția a VII-a</h2>
+    <p class="text-body opacity-80" style="max-width:700px;margin:0 auto;text-align:center;">Descarcă declarația pe proprie răspundere pentru a veni cu ea completată și a ușura procesul de înscriere, dacă ai posibilitatea.</p>
+
+    <div class="declaratii-grid">
+      <a href="https://gugulanmtb.ro/assets/DECLARATIE-PE-PROPRIA-RASPUNDERE-2026.doc" target="_blank" rel="noopener" class="declaratii-btn">
+        <i class="fa-solid fa-file-signature"></i>
+        <span>Declarație pe propria răspundere</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+      <a href="https://gugulanmtb.ro/assets/DECLARATIE-PE-PROPRIA-RASPUNDERE-MINORI-2026.doc" target="_blank" rel="noopener" class="declaratii-btn">
+        <i class="fa-solid fa-file-signature"></i>
+        <span>Declarație de participare minori</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <!-- Logo -->
+
+        <div class="footer-brand">
+
+            <img src="assets/logo.webp" alt="Gugulan MTB">
+
+            <p>Asociația Gugulanii Sportivi</p>
+
+            <span>© 2026 • Toate drepturile rezervate.</span>
+
+        </div>
+
+        <!-- Links -->
+
+        <div class="footer-nav">
+
+            <h4>Linkuri utile</h4>
+
+            <a href="#">Despre eveniment</a>
+            <a href="/regulament-declaratii">Regulament</a>
+            <a href="#">Politica de confidențialitate</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+        <!-- Contact -->
+
+<div class="footer-contact">
+
+    <h4>Contact</h4>
+
+    <a href="mailto:gugulanbike@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        gugulanbike@gmail.com
+    </a>
+
+    <a href="tel:+40723573157">
+        <i class="fa-solid fa-phone"></i>
+        0723 573 157
+    </a>
+
+    <div class="footer-social">
+
+        <a href="https://www.facebook.com/gugulanmtb" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/gugulanmtbrace/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
