@@ -4,27 +4,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
-  --brand: oklch(82% .142 80.17);
-  --brand-deep: oklch(62% .135 70);
-  --dirt: oklch(21.1% .007 67.404);
-  --peak: oklch(100% 0 0);
-  --gravel: oklch(96.9% .007 106.522);
-  --gravel-dark: oklch(92% .006 106.522);
-  --cta: oklch(55% .19 30);
-  --cta-bg: #F4B949;
+  /* Gugulan MTB Race — Brand Guide v1.0 */
+  --brand: #F4A000;       /* Aur Gugulan (Primary Gold) */
+  --brand-deep: #9C6500;  /* Gold, darkened for AA text contrast on light backgrounds */
+  --lime: #CCFF00;        /* Verde Neon — energy, CTA highlights */
+  --dirt: #1A1A1A;        /* Deep Black */
+  --peak: #FFFFFF;        /* White */
+  --gravel: #F7F7F5;
+  --gravel-dark: #ECECE8;
+  --forest: #2D6A4F;      /* Verde pădure — nature imagery / backgrounds */
+  --red-accent: #E63946;  /* alerts, time limits */
+  --gray: #666666;        /* secondary text */
+  --cta-bg: var(--lime);
+  --cta-color: var(--dirt);
+  --cta-hover-bg: var(--brand);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Space Grotesk', monospace, sans-serif;
+  font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
   background: var(--gravel);
   color: var(--dirt);
   -webkit-font-smoothing: antialiased;
 }
 
-.font-display { font-family: 'Archivo', sans-serif; }
-.font-mono { font-family: 'Space Grotesk', monospace; }
+.font-display { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; }
+.font-mono { font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; }
 
 /* Navbar */
 .navbar {
@@ -140,7 +146,7 @@ body {
 /* CTA Button */
 .btn-cta {
   background: var(--cta-bg);
-  color: var(--peak);
+  color: var(--cta-color);
   padding: 0.75rem 1.5rem;
   font-family: 'Archivo', sans-serif;
   font-weight: 900;
@@ -148,10 +154,10 @@ body {
   font-style: italic;
   letter-spacing: -0.02em;
   text-decoration: none;
-  transition: filter 0.2s;
+  transition: background-color 0.2s;
   display: inline-block;
 }
-.btn-cta:hover { filter: brightness(1.1); }
+.btn-cta:hover { background: var(--cta-hover-bg); color: var(--cta-color); }
 
 /* Mobile nav */
 .nav-mobile { display: flex; align-items: center; gap: 0.75rem; }
@@ -245,7 +251,7 @@ body {
   color: var(--peak);
   padding: 2rem;
 }
-.hero-date { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; background-color: #F4B949; max-width:300px; display:block; margin: 0 auto 0 auto;color:#000;}
+.hero-date { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; background-color: var(--brand); max-width:300px; display:block; margin: 0 auto 0 auto; color: var(--dirt); padding: 0.4rem 0.75rem; }
 .hero-title {
   font-family: 'Archivo', sans-serif;
   font-weight: 900;
@@ -268,7 +274,7 @@ body {
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
 .hero-btn-primary {
   background: var(--cta-bg);
-  color: #000;
+  color: var(--cta-color);
   padding: 1rem 2.5rem;
   font-family: 'Archivo', sans-serif;
   font-weight: 900;
@@ -276,9 +282,9 @@ body {
   font-style: italic;
   font-size: 1.125rem;
   text-decoration: none;
-  transition: filter 0.2s;
+  transition: background-color 0.2s;
 }
-.hero-btn-primary:hover { filter: brightness(1.1); }
+.hero-btn-primary:hover { background: var(--cta-hover-bg); color: var(--cta-color); }
 .hero-btn-secondary {
   border: 1px solid var(--peak);
   color: var(--peak);
@@ -412,10 +418,10 @@ body {
 .register-btn:hover { background: var(--brand); color: var(--dirt); border-color: var(--brand); }
 .register-btn-primary {
   background: var(--cta-bg);
-  color: var(--peak);
+  color: var(--cta-color);
   border: 1px solid var(--cta-bg);
 }
-.register-btn-primary:hover { filter: brightness(1.1); color: var(--peak); border-color: var(--cta-bg); }
+.register-btn-primary:hover { background: var(--cta-hover-bg); color: var(--cta-color); border-color: var(--cta-hover-bg); }
 
 
 .register-btn-light{
@@ -478,8 +484,8 @@ body {
   cursor: pointer;
 }
 .track-btn:hover { background: var(--brand); color: var(--dirt); border-color: var(--brand); }
-.track-btn-primary { background: var(--cta-bg); color: var(--peak); border: 1px solid var(--cta-bg); }
-.track-btn-primary:hover { filter: brightness(1.1); color: var(--peak); }
+.track-btn-primary { background: var(--cta-bg); color: var(--cta-color); border: 1px solid var(--cta-bg); }
+.track-btn-primary:hover { background: var(--cta-hover-bg); color: var(--cta-color); border-color: var(--cta-hover-bg); }
 
 /* Kids section */
 .kids-section {
@@ -837,7 +843,7 @@ body {
 .traseu-hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, var(--dirt), color-mix(in oklch, var(--brand) 5%, var(--dirt)));
+  background: linear-gradient(to bottom, var(--dirt), color-mix(in oklch, var(--forest) 12%, var(--dirt)));
 }
 .traseu-hero-content { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; width: 100%; }
 .traseu-meta { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-bottom: 0.5rem; }
@@ -861,7 +867,7 @@ body {
 
 /* Traseu elevation */
 .elevation-chart {
-  background: linear-gradient(to bottom, color-mix(in oklch, var(--brand) 3%, var(--dirt)), var(--dirt));
+  background: linear-gradient(to bottom, color-mix(in oklch, var(--forest) 8%, var(--dirt)), var(--dirt));
   padding: 2rem;
 }
 
@@ -943,6 +949,7 @@ body {
 .text-dirt { color: var(--dirt); }
 .text-brand { color: var(--brand); }
 .text-brand-deep { color: var(--brand-deep); }
+.text-alert { color: var(--red-accent); }
 .text-peak\/60 { color: color-mix(in oklch, var(--peak) 60%, transparent); }
 .text-peak\/80 { color: color-mix(in oklch, var(--peak) 80%, transparent); }
 .weight-700 { font-weight: 700; }
