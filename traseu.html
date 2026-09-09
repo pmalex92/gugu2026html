@@ -22,6 +22,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
@@ -122,10 +123,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <section class="elevation-chart">
     <div class="container">
 
-        <div class="traseu-image">
-            <img src="assets/traseu19.webp"
-                 alt="Traseu montan Gugulan MTB">
-        </div>
+        <div id="map-19k" class="trail-map" data-gpx="assets/19k.gpx" data-color="#CCFF00" role="img" aria-label="Hartă interactivă a traseului de 19 km"></div>
 
     </div>
 </section>
@@ -190,10 +188,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <section class="elevation-chart">
     <div class="container">
 
-        <div class="traseu-image">
-            <img src="assets/traseu30k.webp"
-                 alt="Traseu montan Gugulan MTB">
-        </div>
+        <div id="map-30k" class="trail-map" data-gpx="assets/30k.gpx" data-color="#F4A000" role="img" aria-label="Hartă interactivă a traseului de 30 km"></div>
 
     </div>
 </section>
@@ -256,10 +251,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <section class="elevation-chart">
     <div class="container">
 
-        <div class="traseu-image">
-            <img src="assets/traseu52k.webp"
-                 alt="Traseu montan Gugulan MTB">
-        </div>
+        <div id="map-52k" class="trail-map" data-gpx="assets/52k.gpx" data-color="#E63946" role="img" aria-label="Hartă interactivă a traseului de 52 km"></div>
 
     </div>
 </section>
@@ -377,6 +369,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
 <script src="script.js" defer></script>
 
 </body>

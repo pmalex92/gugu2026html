@@ -90,7 +90,7 @@
   var selectors = [
     '.track-card', '.promo-card', '.program-item', '.inscriere-card',
     '.benefit-item', '.faq-item', '.partner-card', '.sponsor-logo',
-    '.premii-table-wrapper', '.traseu-image img', '.stats-card',
+    '.premii-table-wrapper', '.trail-map', '.stats-card',
     '.control-point'
   ];
   var els = document.querySelectorAll(selectors.join(','));
@@ -111,4 +111,46 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
   els.forEach(function (el) { io.observe(el); });
+})();
+
+// Interactive GPX trail maps (Leaflet) — traseu page
+(function () {
+  var mapEls = document.querySelectorAll('.trail-map[data-gpx]');
+  if (!mapEls.length || typeof L === 'undefined') return;
+
+  mapEls.forEach(function (el) {
+    var gpxUrl = el.getAttribute('data-gpx');
+    var color = el.getAttribute('data-color') || '#F4A000';
+
+    var map = L.map(el, { scrollWheelZoom: false }).setView([45.4091146, 22.1965201], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+
+    // Scroll-zoom only once the visitor has clicked into the map (so page
+    // scrolling over it doesn't get hijacked)
+    el.addEventListener('click', function () { map.scrollWheelZoom.enable(); });
+    el.addEventListener('mouseleave', function () { map.scrollWheelZoom.disable(); });
+
+    fetch(gpxUrl)
+      .then(function (res) { return res.text(); })
+      .then(function (text) {
+        var xml = new DOMParser().parseFromString(text, 'application/xml');
+        var pts = Array.prototype.slice.call(xml.getElementsByTagName('trkpt')).map(function (pt) {
+          return [parseFloat(pt.getAttribute('lat')), parseFloat(pt.getAttribute('lon'))];
+        });
+        if (!pts.length) return;
+
+        var line = L.polyline(pts, { color: color, weight: 4, opacity: 0.9 }).addTo(map);
+        map.fitBounds(line.getBounds(), { padding: [24, 24] });
+
+        var startIcon = L.divIcon({ className: 'trail-marker trail-marker-start', html: '<i class="fa-solid fa-flag"></i>', iconSize: [30, 30] });
+        var endIcon = L.divIcon({ className: 'trail-marker trail-marker-end', html: '<i class="fa-solid fa-flag-checkered"></i>', iconSize: [30, 30] });
+        L.marker(pts[0], { icon: startIcon }).addTo(map);
+        L.marker(pts[pts.length - 1], { icon: endIcon }).addTo(map);
+      })
+      .catch(function (err) { console.error('Nu s-a putut încărca traseul GPX:', gpxUrl, err); });
+  });
 })();
