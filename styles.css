@@ -933,6 +933,66 @@ body {
 /* Border bar */
 .border-bar { border: 0; height: 1px; background: color-mix(in oklch, var(--peak) 10%, transparent); margin: 2rem 0; }
 
+/* New start location note (hero + traseu pages) */
+.start-location-note {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: color-mix(in oklch, var(--brand) 12%, var(--dirt));
+  border: 1px solid color-mix(in oklch, var(--brand) 40%, transparent);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--peak);
+  text-decoration: none;
+  flex-wrap: wrap;
+  transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+a.start-location-note:hover {
+  border-color: var(--lime);
+  background: color-mix(in oklch, var(--brand) 18%, var(--dirt));
+  transform: translateY(-2px);
+}
+.start-location-note i { color: var(--brand); font-size: 1.1rem; flex-shrink: 0; }
+.start-location-note strong { color: var(--brand); }
+.start-location-note .underline-link {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--brand);
+}
+
+/* Hero start-location box */
+.hero-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2rem auto 0;
+  padding: 0.9rem 1.5rem;
+  max-width: 90vw;
+  background: color-mix(in oklch, var(--dirt) 55%, transparent);
+  border: 1px solid color-mix(in oklch, var(--brand) 45%, transparent);
+  border-radius: 999px;
+  color: var(--peak);
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-align: left;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+.hero-location:hover {
+  border-color: var(--lime);
+  background: color-mix(in oklch, var(--dirt) 75%, transparent);
+  transform: translateY(-2px);
+}
+.hero-location i { color: var(--brand); font-size: 1.1rem; flex-shrink: 0; }
+.hero-location strong { color: var(--brand); }
+@media (max-width: 640px) {
+  .hero-location { font-size: 0.72rem; padding: 0.75rem 1.1rem; }
+}
+
 /* Spacing */
 .mb-1 { margin-bottom: 0.25rem; }
 .mb-2 { margin-bottom: 0.5rem; }
