@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Modalități și Taxe de Înscriere • Gugulan MTB</title>
+<meta name="description" content="Modalități și taxe de înscriere la Gugulan MTB 2026. Online și la fața locului. Reduceri pentru înscrierea timpurie."/>
+<meta name="author" content="Gugulan MTB"/>
+<meta name="twitter:site" content="@gugulanmtb"/>
+<meta property="og:title" content="Modalități și Taxe de Înscriere • Gugulan MTB"/>
+<meta property="og:description" content="Modalități și taxe de înscriere la Gugulan MTB 2026. Online și la fața locului. Reduceri pentru înscrierea timpurie."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="canonical" href="/modalitati-inscriere"/>
+<meta name="robots" content="index, follow"/>
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta name="theme-color" content="#ffffff">
+<style>
+.inscriere-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1024px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+.inscriere-card {
+  padding: 2rem;
+  background: color-mix(in oklch, var(--dirt) 95%, transparent);
+  border-radius: 12px;
+  border-left: 4px solid var(--brand);
+  position: relative;
+}
+.inscriere-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  color: var(--peak);
+}
+.inscriere-card i {
+  font-size: 2rem;
+  color: var(--brand);
+}
+.inscriere-option {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid color-mix(in oklch, var(--peak) 15%, transparent);
+}
+.inscriere-option:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.inscriere-option-date {
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.inscriere-option-price {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--cta-bg);
+  margin-top: 0.5rem;
+}
+.inscriere-option-desc {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+.inscriere-cta {
+  display: block;
+  background: var(--brand);
+  color: var(--dirt);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  border: 2px solid var(--brand);
+}
+.inscriere-cta:hover {
+  background: transparent;
+  color: var(--brand);
+}
+.inscriere-benefits {
+  max-width: 1024px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+.benefits-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.benefit-item {
+  padding: 1.5rem;
+  background: color-mix(in oklch, var(--peak) 10%, var(--dirt));
+  border-radius: 8px;
+  border-left: 3px solid var(--peak);
+}
+.benefit-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--brand);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.benefit-item p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.625;
+}
+.benefit-item i {
+  color: var(--peak);
+  font-size: 1.25rem;
+}
+.faq-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: color-mix(in oklch, var(--dirt) 95%, transparent);
+  border-radius: 8px;
+  border-left: 3px solid var(--brand);
+}
+.faq-item h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.faq-item p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.625;
+}
+@media (max-width: 768px) {
+  .inscriere-grid {
+    grid-template-columns: 1fr;
+  }
+  .inscriere-card h3 {
+    font-size: 1.25rem;
+  }
+  .inscriere-option-price {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .inscriere-card {
+    padding: 1.5rem;
+  }
+  .inscriere-card h3 {
+    font-size: 1.1rem;
+  }
+  .inscriere-option-date {
+    font-size: 0.9rem;
+  }
+  .inscriere-option-price {
+    font-size: 1.1rem;
+  }
+  .inscriere-option-desc {
+    font-size: 0.9rem;
+  }
+  .inscriere-cta {
+    padding: 0.9rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  .benefit-item h4 {
+    font-size: 0.95rem;
+  }
+  .benefit-item p {
+    font-size: 0.9rem;
+  }
+  .faq-item h4 {
+    font-size: 0.95rem;
+  }
+  .faq-item p {
+    font-size: 0.9rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="main-nav" class="navbar">
+  <div class="navbar-inner">
+    <a href="https://gugulanmtb.ro/" class="navbar-logo">
+      <img id="nav-logo" src="assets/logo.webp" alt="Gugulan MTB Race Caransebeș" width="120" height="110"/>
+      <span>Gugulan MTB</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="nav-links-desktop">
+      <div class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false">MTB <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="/program">Program</a>
+          <a href="/categorii-premii">Categorii și Premii</a>
+          <a href="/traseu">Traseu MTB</a>
+          <a href="/modalitati-inscriere">Modalități și taxe de înscriere</a>
+          <a href="https://racetime.ro/events/188/participants" target="_blank">Participanții Înscriși</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false">Kids <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="#">Program</a>
+          <a href="#">Categorii și Premii</a>
+          <a href="#">Traseu KIDS</a>
+        </div>
+      </div>
+      <a href="https://liniadesosire.ro/rezultate/gugulan-mtb-run-2025/" class="nav-link">Rezultate Anterioare</a>
+      <a href="https://gugulanmtb.ro/#sponsori" class="nav-link">Sponsori</a>
+      <a href="https://racetime.ro/events/188/register" class="btn-cta">Înscrie-te</a>
+    </div>
+
+    <!-- Mobile buttons -->
+    <div class="nav-mobile">
+      <a href="https://racetime.ro/events/188/register" class="btn-cta" style="padding:0.5rem 1rem;font-size:11px;">Înscrie-te</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('span:last-child').textContent=this.nextElementSibling.classList.contains('open')?'−':'+'">
+        MTB <span>+</span>
+      </button>
+      <div class="mobile-dropdown-items">
+        <a href="/program">Program</a>
+        <a href="/categorii-premii">Categorii și Premii</a>
+        <a href="/traseu">Traseu MTB</a>
+        <a href="/modalitati-inscriere">Modalități și taxe</a>
+        <a href="https://racetime.ro/events/188/participants" target="_blank">Participanții Înscriși</a>
+      </div>
+    </div>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('span:last-child').textContent=this.nextElementSibling.classList.contains('open')?'−':'+'">
+        Kids <span>+</span>
+      </button>
+      <div class="mobile-dropdown-items">
+        <a href="#">Program</a>
+        <a href="#">Categorii și Premii</a>
+        <a href="#">Traseu KIDS</a>
+      </div>
+    </div>
+    <a href="https://liniadesosire.ro/rezultate/gugulan-mtb-run-2025/" class="mobile-link">Rezultate Anterioare</a>
+    <a href="https://gugulanmtb.ro/#sponsori" class="mobile-link" style="border-bottom:none;">Sponsori</a>
+    <a href="https://racetime.ro/events/188/register" class="btn-cta" style="display:block;text-align:center;padding:1rem;margin-top:1.5rem;font-size:1.125rem;">Înscrie-te</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="traseu-hero">
+  <div class="traseu-hero-bg"></div>
+  <div class="traseu-hero-content">
+    <div class="traseu-meta">ÎNSCRIEREA ESTE DESCHISĂ • REDUCERE PENTRU ÎNSCRIEREA ONLINE</div>
+    <h1 class="traseu-title">Modalități și Taxe</h1>
+    <p class="traseu-desc">Descoperă toate modalitățile de înscriere și taxele disponibile. Avem opțiuni flexibile atât online, cât și la fața locului.</p>
+    <div class="traseu-hero-buttons">
+      <a href="https://racetime.ro/events/188/register" class="hero-btn-primary">Înscrie-te Online Acum</a>
+      <a href="/" class="hero-btn-secondary">Înapoi Acasă</a>
+    </div>
+  </div>
+</section>
+
+<!-- Modalități de Înscriere -->
+<section class="section section-dark">
+  <div class="premii-container">
+    <h2 class="premii-section-title">Modalități de Înscriere</h2>
+
+    <div class="inscriere-grid">
+      
+      <!-- Online -->
+      <div class="inscriere-card">
+        <h3>
+          <i class="fa-solid fa-globe"></i>
+          Online
+        </h3>
+        
+        <div class="inscriere-option">
+          <div class="inscriere-option-date"><i class="fa-solid fa-calendar" style="margin-right:0.5rem;"></i>Până la 11 septembrie 2026</div>
+          <div class="inscriere-option-desc">Înscriere online cu taxă redusă</div>
+          <div class="inscriere-option-price">100 RON</div>
+        </div>
+
+        <a href="https://racetime.ro/events/188/register" class="inscriere-cta">Înscrie-te Online</a>
+      </div>
+
+      <!-- La fața locului -->
+      <div class="inscriere-card">
+        <h3>
+          <i class="fa-solid fa-location-dot"></i>
+          La fața locului
+        </h3>
+        
+        <div class="inscriere-option">
+          <div class="inscriere-option-date"><i class="fa-solid fa-clock" style="margin-right:0.5rem;"></i>12 septembrie 2026</div>
+          <div class="inscriere-option-desc">Înscrierea în ziua evenimentului, la sosire (08:00 - 09:30)</div>
+          <div class="inscriere-option-price">130 RON</div>
+        </div>
+
+        <p style="font-size:0.9rem;opacity:0.8;margin-top:1.5rem;padding-top:1.5rem;">
+          <i class="fa-solid fa-info-circle" style="margin-right:0.5rem;"></i>Pentru evitarea aglomerației și taxei mărite, vă recomandăm înscrierea online din timp.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Beneficii și Oferte Speciale -->
+<section class="section section-dark">
+  <div class="inscriere-benefits">
+    <h2 class="premii-section-title">Beneficii și Oferte Speciale</h2>
+
+    <div class="benefits-list">
+      
+      <div class="benefit-item">
+        <h4>
+          <i class="fa-solid fa-shirt"></i>
+          Tricou Gratuit în Kit
+        </h4>
+        <p>
+          Primii <strong>100 de participanți înscriși online</strong> și verificați vor primi automat în kit un tricou oficial Gugulan MTB. Oportunitate limitată!
+        </p>
+      </div>
+
+      <div class="benefit-item">
+        <h4>
+          <i class="fa-solid fa-child"></i>
+          Copii sub 18 Ani și Femeile – Gratuit
+        </h4>
+        <p>
+          Toți copiii cu vârsta sub 18 ani dar și femeile beneficiază de <strong>înscriere gratuită</strong>! Încurajăm participarea tuturor pe toate trasele.
+        </p>
+      </div>
+
+      <div class="benefit-item">
+        <h4>
+          <i class="fa-solid fa-gift"></i>
+          Kit de Participant
+        </h4>
+        <p>
+          Fiecare participant primește un kit oficial care include: numărul de concurs, cip electronic pentru cronometrare, și alte materiale informative.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Întrebări Frecvente -->
+<section class="section section-dark">
+  <div class="inscriere-benefits">
+    <h2 class="premii-section-title">Întrebări Frecvente</h2>
+
+    <div class="faq-item">
+      <h4><i class="fa-solid fa-question" style="margin-right:0.75rem;"></i>Pot să mă înscriu după 11 septembrie?</h4>
+      <p>
+        Înscrierea online se closes pe 11 septembrie. După această dată, singura modalitate de participare este înscrierea la fața locului pe 12 septembrie, cu taxă de 130 RON.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h4><i class="fa-solid fa-question" style="margin-right:0.75rem;"></i>Este necesară o bicicletă de MTB profesionistă?</h4>
+      <p>
+        Nu! Orice bicicletă în stare bună este acceptată, dar avand în vedere că traseele sunt preponderent pentru MTB, bicicleta trebuie să fie potrivită. Important este să vă pregătiți bine și să respectați regulile de siguranță.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h4><i class="fa-solid fa-question" style="margin-right:0.75rem;"></i>Ce se întâmplă dacă nu termin traseul?</h4>
+      <p>
+        Evenimentul nu este o competiție cu obligație de finalizare. Dacă aveți probleme medicale, mecanice sau orice altă situație, echipa organizatorilor va fi disponibilă pentru a vă ajuta pe traseu.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h4><i class="fa-solid fa-question" style="margin-right:0.75rem;"></i>Cum pot contacta organizatorii?</h4>
+      <p>
+        Pentru orice nelămurire suplimentară, vă invităm să ne <a href="mailto:gugulanbike@gmail.com" style="color:var(--brand);font-weight:600;text-decoration:none;border-bottom:2px solid var(--brand);">contactați pe email</a> sau la <a href="tel:+40723573157" style="color:var(--brand);font-weight:600;text-decoration:none;border-bottom:2px solid var(--brand);">0723 573 157</a>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="section section-dark" style="padding-top:3rem;">
+  <div class="premii-container">
+    <div style="text-align:center;padding:2rem;background:color-mix(in oklch, var(--brand) 10%, var(--dirt));border-radius:12px;border:2px solid color-mix(in oklch, var(--brand) 30%, transparent);">
+      <h3 style="font-size:1.5rem;margin-bottom:1rem;color:var(--peak);">Nu mai sta pe gânduri!</h3>
+      <p style="opacity:0.85;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto;">Înscrie-te acum și profită de taxele reduse pentru înscrierea online. Locurile se completează rapid și ofertele speciale sunt limitate!</p>
+      <a href="https://racetime.ro/events/188/register" class="hero-btn-primary" style="display:inline-block;">Înscrie-te Online Acum</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <!-- Logo -->
+
+        <div class="footer-brand">
+
+            <img src="assets/logo.webp" alt="Gugulan MTB">
+
+            <p>Asociația Gugulanii Sportivi</p>
+
+            <span>© 2026 • Toate drepturile rezervate.</span>
+
+        </div>
+
+        <!-- Links -->
+
+        <div class="footer-nav">
+
+            <h4>Linkuri utile</h4>
+
+            <a href="#">Despre eveniment</a>
+            <a href="#">Regulament</a>
+            <a href="#">Politica de confidențialitate</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+        <!-- Contact -->
+
+<div class="footer-contact">
+
+    <h4>Contact</h4>
+
+    <a href="mailto:gugulanbike@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        gugulanbike@gmail.com
+    </a>
+
+    <a href="tel:+40723573157">
+        <i class="fa-solid fa-phone"></i>
+        0723 573 157
+    </a>
+
+    <div class="footer-social">
+
+        <a href="https://www.facebook.com/gugulanmtb" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/gugulanmtbrace/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+
+</footer>
+
+<script>
+// Navbar scroll
+(function() {
+  var nav = document.getElementById('main-nav');
+  if (!nav) return;
+  function onScroll() {
+    if (window.scrollY < 50) nav.classList.remove('scrolled');
+    else nav.classList.add('scrolled');
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
+// Mobile menu
+(function() {
+  var btn = document.getElementById('hamburger-btn');
+  var menu = document.getElementById('mobile-menu');
+  if (!btn || !menu) return;
+  btn.addEventListener('click', function() {
+    menu.classList.toggle('open');
+  });
+})();
+</script>
+
+</body>
+</html>

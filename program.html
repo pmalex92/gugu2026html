@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Program • Gugulan MTB</title>
+<meta name="description" content="Program complet al Gugulan MTB 2024. Orar sosiri, ședință tehnică, start trasee și festivitatea de premiere."/>
+<meta name="author" content="Gugulan MTB"/>
+<meta name="twitter:site" content="@gugulanmtb"/>
+<meta property="og:title" content="Program • Gugulan MTB"/>
+<meta property="og:description" content="Program complet al Gugulan MTB 2024. Orar sosiri, ședință tehnică, start trasee și festivitatea de premiere."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="canonical" href="/program"/>
+<meta name="robots" content="index, follow"/>
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta name="theme-color" content="#ffffff">
+<style>
+.program-timeline {
+  max-width: 800px;
+  margin: 3rem auto;
+  position: relative;
+  padding: 0 1.5rem;
+}
+.program-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.program-time {
+  flex: 0 0 140px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--brand);
+  font-family: 'Archivo', sans-serif;
+}
+.program-content {
+  flex: 1;
+  padding: 1.5rem;
+  background: color-mix(in oklch, var(--dirt) 95%, transparent);
+  border-radius: 8px;
+  border-left: 3px solid var(--brand);
+  position: relative;
+}
+.program-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--peak);
+}
+.program-content p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.625;
+  font-size: 0.95rem;
+}
+.program-content a, .program-location a {
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--brand);
+}
+.program-content a:hover, .program-location a:hover {
+  opacity: 0.8;
+}
+.program-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: color-mix(in oklch, var(--brand) 15%, var(--dirt));
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--brand);
+}
+.program-location i {
+  font-size: 1.1rem;
+}
+@media (max-width: 640px) {
+  .program-item {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .program-time {
+    flex: 0 0 90px;
+    font-size: 0.9rem;
+  }
+  .program-content {
+    padding: 1rem;
+  }
+  .program-content h3 {
+    font-size: 1rem;
+  }
+  .program-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .program-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .program-time {
+    flex: 1;
+    font-size: 0.85rem;
+  }
+  .program-content {
+    padding: 0.9rem;
+  }
+  .program-content h3 {
+    font-size: 0.95rem;
+  }
+  .program-content p {
+    font-size: 0.85rem;
+  }
+  .program-location {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="main-nav" class="navbar">
+  <div class="navbar-inner">
+    <a href="https://gugulanmtb.ro/" class="navbar-logo">
+      <img id="nav-logo" src="assets/logo.webp" alt="Gugulan MTB Race Caransebeș" width="120" height="110"/>
+      <span>Gugulan MTB</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="nav-links-desktop">
+      <div class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false">MTB <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="/program">Program</a>
+          <a href="/categorii-premii">Categorii și Premii</a>
+          <a href="/traseu">Traseu MTB</a>
+          <a href="/modalitati-inscriere">Modalități și taxe de înscriere</a>
+          <a href="https://racetime.ro/events/188/participants" target="_blank">Participanții Înscriși</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false">Kids <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="#">Program</a>
+          <a href="#">Categorii și Premii</a>
+          <a href="#">Traseu KIDS</a>
+        </div>
+      </div>
+      <a href="https://liniadesosire.ro/rezultate/gugulan-mtb-run-2025/" class="nav-link">Rezultate Anterioare</a>
+      <a href="https://gugulanmtb.ro/#sponsori" class="nav-link">Sponsori</a>
+      <a href="https://racetime.ro/events/188/register" class="btn-cta">Înscrie-te</a>
+    </div>
+
+    <!-- Mobile buttons -->
+    <div class="nav-mobile">
+      <a href="https://racetime.ro/events/188/register" class="btn-cta" style="padding:0.5rem 1rem;font-size:11px;">Înscrie-te</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('span:last-child').textContent=this.nextElementSibling.classList.contains('open')?'−':'+'">
+        MTB <span>+</span>
+      </button>
+      <div class="mobile-dropdown-items">
+        <a href="/program">Program</a>
+        <a href="/categorii-premii">Categorii și Premii</a>
+        <a href="/traseu">Traseu MTB</a>
+        <a href="/modalitati-inscriere">Modalități și taxe</a>
+        <a href="https://racetime.ro/events/188/participants" target="_blank">Participanții Înscriși</a>
+      </div>
+    </div>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('span:last-child').textContent=this.nextElementSibling.classList.contains('open')?'−':'+'">
+        Kids <span>+</span>
+      </button>
+      <div class="mobile-dropdown-items">
+        <a href="#">Program</a>
+        <a href="#">Categorii și Premii</a>
+        <a href="#">Traseu KIDS</a>
+      </div>
+    </div>
+    <a href="https://liniadesosire.ro/rezultate/gugulan-mtb-run-2025/" class="mobile-link">Rezultate Anterioare</a>
+    <a href="https://gugulanmtb.ro/#sponsori" class="mobile-link" style="border-bottom:none;">Sponsori</a>
+    <a href="https://racetime.ro/events/188/register" class="btn-cta" style="display:block;text-align:center;padding:1rem;margin-top:1.5rem;font-size:1.125rem;">Înscrie-te</a>
+  </div>
+</nav>
+
+<!-- Program Hero -->
+<section class="traseu-hero">
+  <div class="traseu-hero-bg"></div>
+  <div class="traseu-hero-content">
+    <div class="traseu-meta">12 SEPTEMBRIE 2026 • CARANSEBEȘ</div>
+    <h1 class="traseu-title">Program Gugulan MTB</h1>
+    <p class="traseu-desc">Descoperă programul complet al evenimentului. De la sosirea participanților și ședința tehnică, până la start-urile traselor și festivitatea de premiere.</p>
+    <div class="traseu-hero-buttons">
+      <a href="https://racetime.ro/events/188/register" class="hero-btn-primary">Înscrie-te Acum</a>
+      <a href="/" class="hero-btn-secondary">Înapoi Acasă</a>
+    </div>
+  </div>
+</section>
+
+<!-- Program Timeline -->
+<section class="section section-dark">
+  <div class="premii-container">
+    <div class="program-timeline">
+      
+      <div class="program-item">
+        <div class="program-time">08:00 – 09:30</div>
+        <div class="program-content">
+          <h3><i class="fa-solid fa-person-hiking" style="color:var(--brand);margin-right:0.5rem;"></i>Sosirea Participanților</h3>
+          <p>Venit în cartierul Valea Cenchii, Str. Muntele Nemanu, Caransebeș. Validări și înscrieri la fața locului, ridicarea kiturilor de participant.</p>
+          <div class="program-location">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="https://www.google.com/maps?q=45.4091146,22.1965201&z=17&hl=en" target="_blank">Vezi locația</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="program-item">
+        <div class="program-time">09:45</div>
+        <div class="program-content">
+          <h3><i class="fa-solid fa-microphone" style="color:var(--brand);margin-right:0.5rem;"></i>Ședința Tehnică</h3>
+          <p>Informații importante despre trasee, reguli de siguranță și desfășurarea evenimentului.</p>
+        </div>
+      </div>
+
+      <div class="program-item">
+        <div class="program-time">10:00</div>
+        <div class="program-content">
+          <h3><i class="fa-solid fa-flag-checkered" style="color:var(--brand);margin-right:0.5rem;"></i>Start MTB 52KM</h3>
+          <p><strong>Traseu 52KM</strong> – Pentru cicliștii cu experiență și condiție fizică foarte bună.</p>
+        </div>
+      </div>
+
+      <div class="program-item">
+        <div class="program-time">10:10</div>
+        <div class="program-content">
+          <h3><i class="fa-solid fa-flag-checkered" style="color:var(--brand);margin-right:0.5rem;"></i>Start MTB 30KM</h3>
+          <p><strong>Traseu 30KM</strong> – Nivel intermediar, potrivit pentru cicliștii cu experiență.</p>
+        </div>
+      </div>
+
+      <div class="program-item">
+        <div class="program-time">10:15</div>
+        <div class="program-content">
+          <h3><i class="fa-solid fa-flag-checkered" style="color:var(--brand);margin-right:0.5rem;"></i>Start MTB 19KM</h3>
+          <p><strong>Traseu 19KM</strong> – Ideal pentru cicliștii care fac pasul din urmă și doresc distanță mai scurtă.</p>
+        </div>
+      </div>
+
+      <div class="program-item">
+        <div class="program-time">14:30</div>
+        <div class="program-content">
+          <h3><i class="fa-solid fa-trophy" style="color:var(--brand);margin-right:0.5rem;"></i>Festivitatea de Premiere</h3>
+          <p>Premierea câștigătorilor pe categorii, oferirea premiilor în bani și a altor cadouri. Momente de neuitat și celebrarea performanțelor!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Info Section -->
+<section class="section section-dark">
+  <div class="premii-container">
+    <h3 class="section-title" style="font-size:1.5rem;letter-spacing:0.1em;margin-bottom:2rem;">Informații Importante</h3>
+    
+    <div style="display:grid;gap:2rem;max-width:1024px;">
+      <div>
+        <h4 style="font-weight:700;margin-bottom:1rem;color:var(--brand);">Locația</h4>
+        <p style="opacity:0.9;line-height:1.625;">Programul se desfășoară în cartierul Valea Cenchii, Str. Muntele Nemanu din Caransebeș. Vă recomandăm să veniți cu aproximativ 1 ora ~ 30 de minute înainte de ora de sosire pentru a avea timp suficient pentru validări și ridicarea kitului.</p>
+
+        <div class="program-location">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="https://www.google.com/maps?q=45.4091146,22.1965201&z=17&hl=en" target="_blank">Vezi locația</a>
+          </div>
+      </div>
+      
+      <div>
+        <h4 style="font-weight:700;margin-bottom:1rem;color:var(--brand);">Ce trebuie să aduceți</h4>
+        <p style="opacity:0.9;line-height:1.625;">Bicicletă în stare bună, cască de protecție (obligatorie), apă (vro exista puncte de hidratare aditionale pe traseu), echipament potrivit pentru vreme.</p>
+      </div>
+      
+      <div>
+        <h4 style="font-weight:700;margin-bottom:1rem;color:var(--brand);">Reguli de Siguranță</h4>
+        <p style="opacity:0.9;line-height:1.625;">Respectați semnalizația pe traseu, rămâneți vigilenți pe drumul public și respectați toți ceilalți participanți.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="section section-dark" style="padding-top:3rem;">
+  <div class="premii-container">
+    <div style="text-align:center;padding:2rem;background:color-mix(in oklch, var(--brand) 10%, var(--dirt));border-radius:12px;border:2px solid color-mix(in oklch, var(--brand) 30%, transparent);">
+      <h3 style="font-size:1.5rem;margin-bottom:1rem;color:var(--peak);">Gata să participi?</h3>
+      <p style="opacity:0.85;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto;">Alege-ți traseu preferat și înscrie-te acum! Abia așteptăm să ne vedem pe 12 septembrie la Gugulan MTB VII.</p>
+      <a href="https://racetime.ro/events/188/register" class="hero-btn-primary" style="display:inline-block;">Înscrie-te la Gugulan MTB 2026</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <!-- Logo -->
+
+        <div class="footer-brand">
+
+            <img src="assets/logo.webp" alt="Gugulan MTB">
+
+            <p>Asociația Gugulanii Sportivi</p>
+
+            <span>© 2026 • Toate drepturile rezervate.</span>
+
+        </div>
+
+        <!-- Links -->
+
+        <div class="footer-nav">
+
+            <h4>Linkuri utile</h4>
+
+            <a href="#">Despre eveniment</a>
+            <a href="#">Regulament</a>
+            <a href="#">Politica de confidențialitate</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+        <!-- Contact -->
+
+<div class="footer-contact">
+
+    <h4>Contact</h4>
+
+    <a href="mailto:gugulanbike@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        gugulanbike@gmail.com
+    </a>
+
+    <a href="tel:+40723573157">
+        <i class="fa-solid fa-phone"></i>
+        0723 573 157
+    </a>
+
+    <div class="footer-social">
+
+        <a href="https://www.facebook.com/gugulanmtb" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/gugulanmtbrace/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+
+</footer>
+
+<script>
+// Navbar scroll
+(function() {
+  var nav = document.getElementById('main-nav');
+  if (!nav) return;
+  function onScroll() {
+    if (window.scrollY < 50) nav.classList.remove('scrolled');
+    else nav.classList.add('scrolled');
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
+// Mobile menu
+(function() {
+  var btn = document.getElementById('hamburger-btn');
+  var menu = document.getElementById('mobile-menu');
+  if (!btn || !menu) return;
+  btn.addEventListener('click', function() {
+    menu.classList.toggle('open');
+  });
+})();
+</script>
+
+</body>
+</html>

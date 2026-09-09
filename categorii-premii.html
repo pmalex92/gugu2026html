@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Categorii și Premii • Gugulan MTB</title>
+<meta name="description" content="Descoperă categoriile și premiile la Gugulan MTB Caransebeș: recompense în bani și produse pentru fiecare categorie."/>
+<meta name="author" content="Gugulan MTB"/>
+<meta name="twitter:site" content="@gugulanmtb"/>
+<meta property="og:title" content="Categorii și Premii • Gugulan MTB"/>
+<meta property="og:description" content="Descoperă categoriile și premiile la Gugulan MTB Caransebeș: recompense în bani și produse pentru fiecare categorie."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="canonical" href="/categorii-premii"/>
+<meta name="robots" content="index, follow"/>
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta name="theme-color" content="#ffffff">
+<style>
+.premii-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+}
+.premii-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: color-mix(in oklch, var(--dirt) 95%, transparent);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 500px;
+}
+.premii-table thead {
+  background: var(--brand);
+  color: var(--dirt);
+  font-weight: 700;
+}
+.premii-table th {
+  padding: 1.25rem 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.premii-table td {
+  padding: 1rem;
+  border-bottom: 1px solid color-mix(in oklch, var(--peak) 15%, transparent);
+  font-size: 0.95rem;
+}
+.premii-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.premii-table tbody tr:hover {
+  background: color-mix(in oklch, var(--brand) 10%, var(--dirt));
+}
+.premii-category {
+  font-weight: 700;
+  color: var(--brand);
+}
+.premii-money {
+  color: var(--cta-bg);
+  font-weight: 700;
+}
+.premii-product {
+  color: var(--brand);
+  font-style: italic;
+}
+.premii-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .premii-container {
+    padding: 4rem 1.5rem;
+  }
+}
+.premii-total {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 2px solid color-mix(in oklch, var(--peak) 20%, transparent);
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--brand);
+}
+.premii-section-title {
+  font-family: 'Archivo', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: -0.05em;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid color-mix(in oklch, var(--brand) 50%, transparent);
+}
+.premii-section-title:first-of-type {
+  margin-top: 0;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .premii-table th {
+    padding: 0.85rem 0.6rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+  .premii-table td {
+    padding: 0.85rem 0.6rem;
+    font-size: 0.85rem;
+  }
+  .premii-table {
+    min-width: 480px;
+  }
+}
+
+@media (max-width: 640px) {
+  .premii-table th {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+  }
+  .premii-table td {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  .premii-table {
+    min-width: 420px;
+  }
+  .premii-section-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .premii-category {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .premii-table th {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.02em;
+  }
+  .premii-table td {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.75rem;
+  }
+  .premii-table {
+    min-width: 360px;
+  }
+  .premii-money {
+    font-size: 0.85rem;
+  }
+  .premii-container {
+    padding: 2rem 1rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="main-nav" class="navbar">
+  <div class="navbar-inner">
+    <a href="https://gugulanmtb.ro/" class="navbar-logo">
+      <img id="nav-logo" src="assets/logo.webp" alt="Gugulan MTB Race Caransebeș" width="120" height="110"/>
+      <span>Gugulan MTB</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="nav-links-desktop">
+      <div class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false">MTB <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="/program">Program</a>
+          <a href="/categorii-premii">Categorii și Premii</a>
+          <a href="/traseu">Traseu MTB</a>
+          <a href="/modalitati-inscriere">Modalități și taxe de înscriere</a>
+          <a href="https://racetime.ro/events/188/participants" target="_blank">Participanții Înscriși</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false">Kids <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="#">Program</a>
+          <a href="#">Categorii și Premii</a>
+          <a href="#">Traseu KIDS</a>
+        </div>
+      </div>
+      <a href="https://liniadesosire.ro/rezultate/gugulan-mtb-run-2025/" class="nav-link">Rezultate Anterioare</a>
+      <a href="https://gugulanmtb.ro/#sponsori" class="nav-link">Sponsori</a>
+      <a href="https://racetime.ro/events/188/register" class="btn-cta">Înscrie-te</a>
+    </div>
+
+    <!-- Mobile buttons -->
+    <div class="nav-mobile">
+      <a href="https://racetime.ro/events/188/register" class="btn-cta" style="padding:0.5rem 1rem;font-size:11px;">Înscrie-te</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('span:last-child').textContent=this.nextElementSibling.classList.contains('open')?'−':'+'">
+        MTB <span>+</span>
+      </button>
+      <div class="mobile-dropdown-items">
+        <a href="/program">Program</a>
+        <a href="/categorii-premii">Categorii și Premii</a>
+        <a href="/traseu">Traseu MTB</a>
+        <a href="/modalitati-inscriere">Modalități și taxe</a>
+        <a href="https://racetime.ro/events/188/participants" target="_blank">Participanții Înscriși</a>
+      </div>
+    </div>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('span:last-child').textContent=this.nextElementSibling.classList.contains('open')?'−':'+'">
+        Kids <span>+</span>
+      </button>
+      <div class="mobile-dropdown-items">
+        <a href="#">Program</a>
+        <a href="#">Categorii și Premii</a>
+        <a href="#">Traseu KIDS</a>
+      </div>
+    </div>
+    <a href="https://liniadesosire.ro/rezultate/gugulan-mtb-run-2025/" class="mobile-link">Rezultate Anterioare</a>
+    <a href="https://gugulanmtb.ro/#sponsori" class="mobile-link" style="border-bottom:none;">Sponsori</a>
+    <a href="https://racetime.ro/events/188/register" class="btn-cta" style="display:block;text-align:center;padding:1rem;margin-top:1.5rem;font-size:1.125rem;">Înscrie-te</a>
+  </div>
+</nav>
+
+<!-- Categorii și Premii Hero -->
+<section class="traseu-hero">
+  <div class="traseu-hero-bg"></div>
+  <div class="traseu-hero-content">
+    <div class="traseu-meta">3 TRASEE • 20+ CATEGORII • 14.550 RON PREMII</div>
+    <h1 class="traseu-title">Categorii și Premii</h1>
+    <p class="traseu-desc">Descoperi toate categoriile și premiile disponibile pentru fiecare traseu la Gugulan MTB 2026. Indiferent de vârstă sau nivel, avem o categorie potrivită pentru tine, cu recompense atractive în bani și produse.</p>
+    <div class="traseu-hero-buttons">
+      <a href="https://racetime.ro/events/188/register" class="hero-btn-primary">Înscrie-te Acum</a>
+      <a href="/" class="hero-btn-secondary">Înapoi Acasă</a>
+    </div>
+  </div>
+</section>
+
+<!-- Premii MTB 19KM -->
+<section class="section section-dark">
+  <div class="premii-container">
+    <h2 class="premii-section-title">MTB Scurt 19KM</h2>
+    
+    <div class="premii-table-wrapper">
+      <table class="premii-table">
+        <thead>
+          <tr>
+            <th>Categorie</th>
+            <th>Locul I</th>
+            <th>Locul II</th>
+            <th>Locul III</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="premii-category">Feminin 13-18 (2013-2008)</td>
+            <td class="premii-money">200 RON</td>
+            <td class="premii-money">150 RON</td>
+            <td class="premii-money">100 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Masculin 13-16 (2013-2010)</td>
+            <td class="premii-money">200 RON</td>
+            <td class="premii-money">150 RON</td>
+            <td class="premii-money">100 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Masculin 17-18 (2009-2008)</td>
+            <td class="premii-money">200 RON</td>
+            <td class="premii-money">150 RON</td>
+            <td class="premii-money">100 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Feminin 19+ (2007+)</td>
+            <td class="premii-money">300 RON</td>
+            <td class="premii-money">200 RON</td>
+            <td class="premii-money">100 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Masculin 19+ (2007+)</td>
+            <td class="premii-money">300 RON</td>
+            <td class="premii-money">200 RON</td>
+            <td class="premii-money">100 RON</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="premii-total">Total: 2.650 RON</div>
+  </div>
+</section>
+
+<!-- Premii MTB 30KM -->
+<section class="section section-dark">
+  <div class="premii-container">
+    <h2 class="premii-section-title">MTB Mediu 30KM</h2>
+    
+    <div class="premii-table-wrapper">
+      <table class="premii-table">
+        <thead>
+          <tr>
+            <th>Categorie</th>
+            <th>Locul I</th>
+            <th>Locul II</th>
+            <th>Locul III</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="premii-category">Feminin 16-18 (2010-2008)</td>
+            <td class="premii-money">250 RON</td>
+            <td class="premii-money">200 RON</td>
+            <td class="premii-money">150 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Feminin 19+ (2007+)</td>
+            <td class="premii-money">400 RON</td>
+            <td class="premii-money">300 RON</td>
+            <td class="premii-money">200 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Masculin 16-18 (2010-2008)</td>
+            <td class="premii-money">250 RON</td>
+            <td class="premii-money">200 RON</td>
+            <td class="premii-money">150 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Masculin 19-39 (2007-1987)</td>
+            <td class="premii-money">400 RON</td>
+            <td class="premii-money">300 RON</td>
+            <td class="premii-money">200 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Masculin 40+ (1986+)</td>
+            <td class="premii-money">400 RON</td>
+            <td class="premii-money">300 RON</td>
+            <td class="premii-money">200 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">eBike Feminin 19+ (2007+)</td>
+            <td class="premii-money">400 RON</td>
+            <td class="premii-money">300 RON</td>
+            <td class="premii-money">200 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">eBike Masculin 19+ (2007+)</td>
+            <td class="premii-money">400 RON</td>
+            <td class="premii-money">300 RON</td>
+            <td class="premii-money">200 RON</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="premii-total">Total: 5.700 RON</div>
+  </div>
+</section>
+
+<!-- Premii MTB 2X30KM -->
+<section class="section section-dark">
+  <div class="premii-container">
+    <h2 class="premii-section-title">MTB Lung 52KM</h2>
+    
+    <div class="premii-table-wrapper">
+      <table class="premii-table">
+        <thead>
+          <tr>
+            <th>Categorie</th>
+            <th>Locul I</th>
+            <th>Locul II</th>
+            <th>Locul III</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="premii-category">ELITE Feminin (2007+)</td>
+            <td class="premii-money">800 RON</td>
+            <td class="premii-money">600 RON</td>
+            <td class="premii-money">400 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">ELITE Masculin (2007+)</td>
+            <td class="premii-money">800 RON</td>
+            <td class="premii-money">600 RON</td>
+            <td class="premii-money">400 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Feminin 19+ (2007+)</td>
+            <td class="premii-money">600 RON</td>
+            <td class="premii-money">450 RON</td>
+            <td class="premii-money">300 RON</td>
+          </tr>
+          <tr>
+            <td class="premii-category">Masculin 19+ (2007+)</td>
+            <td class="premii-money">600 RON</td>
+            <td class="premii-money">450 RON</td>
+            <td class="premii-money">300 RON</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="premii-total">Total: 6.200 RON</div>
+  </div>
+</section>
+
+<!-- Info Section -->
+<section class="section section-dark">
+  <div class="premii-container">
+    <h3 class="section-title" style="font-size:1.5rem;letter-spacing:0.1em;margin-bottom:2rem;">Informații Importante</h3>
+    
+    <div style="display:grid;gap:2rem;max-width:1024px;">
+      <div>
+        <h4 style="font-weight:700;margin-bottom:1rem;color:var(--brand);">Clasament General</h4>
+        <p style="opacity:0.9;line-height:1.625;">Se face clasament pentru categoriile specificate mai sus, precum și un clasament general. Pentru a fi valabilă o categorie, aceasta trebuie să aibă cel puțin 5 concurenți, în caz contrar se va face clasament cu cea inferioară/superioară.</p>
+      </div>
+      
+      <div>
+        <h4 style="font-weight:700;margin-bottom:1rem;color:var(--brand);">Condiții de Validare</h4>
+        <p style="opacity:0.9;line-height:1.625;">Pentru a fi valabilă o categorie, este necesar ca să fie înscriși 5 concurenți. În caz contrar, categoria se va cumula cu cea inferioară/superioară. Copii sub 14 ani care doresc să participe la cursa 19KM trebuie să fie înscriși de un părinte/tutor legal.</p>
+      </div>
+      
+      <div>
+        <h4 style="font-weight:700;margin-bottom:1rem;color:var(--brand);">Plata Premiilor</h4>
+        <p style="opacity:0.9;line-height:1.625;">Premiile în bani (RON) se vor acorda în funcție de categoriile și traseul asftel: Premiile sunt în total de 14.550 RON distribuite în trei trasee: MTB Scurt 2.650 RON, MTB Mediu 5.700 RON, MTB Lung 6.200 RON.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="section section-dark" style="padding-top:3rem;">
+  <div class="premii-container">
+    <div style="text-align:center;padding:2rem;background:color-mix(in oklch, var(--brand) 10%, var(--dirt));border-radius:12px;border:2px solid color-mix(in oklch, var(--brand) 30%, transparent);">
+      <h3 style="font-size:1.5rem;margin-bottom:1rem;color:var(--peak);">Gata să mă înscriu?</h3>
+      <p style="opacity:0.85;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto;">Alege-ți categoria preferată și traseu și înregistrează-te acum! Locurile sunt limitate și cresele se completează rapid.</p>
+      <a href="https://racetime.ro/events/188/register" class="hero-btn-primary" style="display:inline-block;">Înscrie-te la Gugulan MTB 2026</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <!-- Logo -->
+
+        <div class="footer-brand">
+
+            <img src="assets/logo.webp" alt="Gugulan MTB">
+
+            <p>Asociația Gugulanii Sportivi</p>
+
+            <span>© 2026 • Toate drepturile rezervate.</span>
+
+        </div>
+
+        <!-- Links -->
+
+        <div class="footer-nav">
+
+            <h4>Linkuri utile</h4>
+
+            <a href="#">Despre eveniment</a>
+            <a href="#">Regulament</a>
+            <a href="#">Politica de confidențialitate</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+        <!-- Contact -->
+
+<div class="footer-contact">
+
+    <h4>Contact</h4>
+
+    <a href="mailto:gugulanbike@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        gugulanbike@gmail.com
+    </a>
+
+    <a href="tel:+40723573157">
+        <i class="fa-solid fa-phone"></i>
+        0723 573 157
+    </a>
+
+    <div class="footer-social">
+
+        <a href="https://www.facebook.com/gugulanmtb" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/gugulanmtbrace/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+
+</footer>
+
+<script>
+// Navbar scroll
+(function() {
+  var nav = document.getElementById('main-nav');
+  if (!nav) return;
+  function onScroll() {
+    if (window.scrollY < 50) nav.classList.remove('scrolled');
+    else nav.classList.add('scrolled');
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
+// Mobile menu
+(function() {
+  var btn = document.getElementById('hamburger-btn');
+  var menu = document.getElementById('mobile-menu');
+  if (!btn || !menu) return;
+  btn.addEventListener('click', function() {
+    menu.classList.toggle('open');
+  });
+})();
+</script>
+
+</body>
+</html>
