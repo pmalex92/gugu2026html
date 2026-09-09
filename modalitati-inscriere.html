@@ -38,6 +38,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   border-radius: 12px;
   border-left: 4px solid var(--brand);
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.inscriere-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -18px rgba(0,0,0,0.6);
+  border-color: var(--lime);
 }
 .inscriere-card h3 {
   display: flex;
@@ -70,7 +76,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 .inscriere-option-price {
   font-size: 1.375rem;
   font-weight: 700;
-  color: var(--cta-bg);
+  color: var(--brand);
   margin-top: 0.5rem;
 }
 .inscriere-option-desc {
@@ -111,6 +117,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   background: color-mix(in oklch, var(--peak) 10%, var(--dirt));
   border-radius: 8px;
   border-left: 3px solid var(--peak);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.benefit-item:hover {
+  transform: translateX(6px);
+  border-color: var(--brand);
 }
 .benefit-item h4 {
   margin: 0 0 0.5rem 0;
@@ -135,6 +146,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   background: color-mix(in oklch, var(--dirt) 95%, transparent);
   border-radius: 8px;
   border-left: 3px solid var(--brand);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.faq-item:hover {
+  transform: translateX(6px);
+  border-color: var(--lime);
 }
 .faq-item h4 {
   margin: 0 0 0.75rem 0;
@@ -479,29 +495,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 </footer>
 
-<script>
-// Navbar scroll
-(function() {
-  var nav = document.getElementById('main-nav');
-  if (!nav) return;
-  function onScroll() {
-    if (window.scrollY < 50) nav.classList.remove('scrolled');
-    else nav.classList.add('scrolled');
-  }
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-})();
-
-// Mobile menu
-(function() {
-  var btn = document.getElementById('hamburger-btn');
-  var menu = document.getElementById('mobile-menu');
-  if (!btn || !menu) return;
-  btn.addEventListener('click', function() {
-    menu.classList.toggle('open');
-  });
-})();
-</script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
