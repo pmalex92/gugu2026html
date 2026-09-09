@@ -22,6 +22,19 @@
   });
 })();
 
+// Accordion toggle (Regulament page)
+(function () {
+  var headers = document.querySelectorAll('.accordion-header');
+  if (!headers.length) return;
+  headers.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.accordion-item');
+      var isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+})();
+
 // Countdown live — 12 Septembrie 2026, ora 09:00 EEST (only runs on pages with #countdown)
 (function () {
   var eventDate = new Date('2026-09-12T09:00:00+03:00').getTime();
