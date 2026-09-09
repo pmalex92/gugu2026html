@@ -60,6 +60,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 .premii-table tbody tr:last-child td {
   border-bottom: none;
 }
+.premii-table tbody tr {
+  transition: background-color 0.25s ease;
+}
 .premii-table tbody tr:hover {
   background: color-mix(in oklch, var(--brand) 10%, var(--dirt));
 }
@@ -68,8 +71,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   color: var(--brand);
 }
 .premii-money {
-  color: var(--cta-bg);
+  color: var(--brand);
   font-weight: 700;
+  transition: color 0.25s ease;
+}
+.premii-table tbody tr:hover .premii-money {
+  color: var(--lime);
 }
 .premii-product {
   color: var(--brand);
@@ -526,29 +533,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 </footer>
 
-<script>
-// Navbar scroll
-(function() {
-  var nav = document.getElementById('main-nav');
-  if (!nav) return;
-  function onScroll() {
-    if (window.scrollY < 50) nav.classList.remove('scrolled');
-    else nav.classList.add('scrolled');
-  }
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-})();
-
-// Mobile menu
-(function() {
-  var btn = document.getElementById('hamburger-btn');
-  var menu = document.getElementById('mobile-menu');
-  if (!btn || !menu) return;
-  btn.addEventListener('click', function() {
-    menu.classList.toggle('open');
-  });
-})();
-</script>
+<script src="script.js" defer></script>
 
 </body>
 </html>

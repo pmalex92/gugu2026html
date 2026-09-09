@@ -168,7 +168,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       </ul>
       <p class="text-xs leading-relaxed text-peak/80">*Copiii sub 18 ani și femeile nu plătesc taxa de înscriere.</p>
       <p class="text-xs leading-relaxed text-peak/80">*Taxa pentru concurenții înscriși online și cu plata confirmată, este de 100 RON.</p>
-      <p class="text-xs leading-relaxed text-peak/80">*Taxa pentru concurenții înscriși la fața locului este de 160 RON.</p>
+      <p class="text-xs leading-relaxed text-alert">*Taxa pentru concurenții înscriși la fața locului este de 160 RON.</p>
     </div>
   </div>
 </section>
@@ -479,49 +479,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 </footer>
 
-<script>
-// Navbar scroll
-(function() {
-  var nav = document.getElementById('main-nav');
-  if (!nav) return;
-  function onScroll() {
-    if (window.scrollY < 50) nav.classList.remove('scrolled');
-    else nav.classList.add('scrolled');
-  }
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-})();
-
-// Mobile menu
-(function() {
-  var btn = document.getElementById('hamburger-btn');
-  var menu = document.getElementById('mobile-menu');
-  if (!btn || !menu) return;
-  btn.addEventListener('click', function() {
-    menu.classList.toggle('open');
-  });
-})();
-
-// Countdown live — 12 Septembrie 2026, ora 09:00 EEST
-(function() {
-  var eventDate = new Date('2026-09-12T09:00:00+03:00').getTime();
-  var dEl = document.getElementById('cd-days');
-  var hEl = document.getElementById('cd-hours');
-  var mEl = document.getElementById('cd-mins');
-  var sEl = document.getElementById('cd-secs');
-  if (!dEl) return;
-  function tick() {
-    var now = new Date().getTime();
-    var diff = Math.max(0, eventDate - now);
-    dEl.textContent = Math.floor(diff / (1000 * 60 * 60 * 24));
-    hEl.textContent = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    mEl.textContent = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    sEl.textContent = Math.floor((diff % (1000 * 60)) / 1000);
-  }
-  tick();
-  setInterval(tick, 1000);
-})();
-</script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
