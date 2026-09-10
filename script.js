@@ -91,7 +91,7 @@
     '.track-card', '.promo-card', '.program-item', '.inscriere-card',
     '.benefit-item', '.faq-item', '.partner-card', '.sponsor-logo',
     '.premii-table-wrapper', '.trail-map', '.stats-card',
-    '.control-point'
+    '.control-point', '.volunteers-media'
   ];
   var els = document.querySelectorAll(selectors.join(','));
   if (!els.length) return;

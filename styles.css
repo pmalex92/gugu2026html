@@ -682,6 +682,60 @@ body {
 
 }
 
+/* Voluntari */
+
+.volunteers-section{
+    position:relative;
+    width:100%;
+}
+
+.volunteers-media{
+    position:relative;
+    width:100%;
+    aspect-ratio:1500/877;
+    overflow:hidden;
+}
+
+.volunteers-media img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 30%;
+    display:block;
+}
+
+.volunteers-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top, var(--dirt), color-mix(in oklch, var(--dirt) 20%, transparent) 55%, transparent);
+}
+
+.volunteers-title{
+    position:absolute;
+    left:0; right:0; bottom:2rem;
+    text-align:center;
+    font-family:'Archivo', sans-serif;
+    font-weight:900;
+    font-style:italic;
+    text-transform:uppercase;
+    letter-spacing:-0.02em;
+    font-size:1.75rem;
+    color:var(--peak);
+    padding:0 1.5rem;
+    text-shadow:0 2px 20px rgba(0,0,0,.6);
+}
+
+.volunteers-title span{
+    color:var(--brand);
+}
+
+@media (min-width:768px){
+    .volunteers-title{
+        font-size:3rem;
+        bottom:3rem;
+    }
+}
+
 /* Footer */
 .footer{
 
